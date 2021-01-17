@@ -6,6 +6,26 @@
 
 }
 
+
+html{
+  /*font-family: 'Inter', sans-serif;*/
+  font-family: 'RiksWeb';
+  color: #6211c4;
+  background: black;
+  width: 100vw;
+}
+
+body{
+  max-width: 100vw;  
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+main{
+  width: 50vw;
+  /* max-width: 100vw; */
+}
+
 .button {
  
     display: inline-block;
@@ -34,19 +54,7 @@
      cursor: pointer;
 }
 
-html{
-    /*font-family: 'Inter', sans-serif;*/
-    font-family: 'RiksWeb';
-    color: #6211c4;
-    background: black;
-    max-width: 100%;  
-    width: 100vw;
-}
 
-body{
-    max-width: 100%;  
-    width: 100vw;
-}
 
 header{
         font-size: 20vw; 
@@ -54,7 +62,7 @@ header{
         background-color: black;
         position: relative;
         line-height: 16vw;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         left: 0;
         top: 0;
@@ -74,17 +82,35 @@ header span{
     padding: 0 6vw;
 }
 
-/* #spaziovuoto{
-    margin: 40%;
-} */
+.blocco div{
+  max-width: 86vw;
+}
+
+#release{
+  border-bottom: double .5vw white;
+  border-top: double .5vw white;
+}
+
+#release div{
+
+    /* width: 500px; */
+    height: 50vw/3;
+  }
+
+
 
 .red{
   color: red;
   opacity: 1;
   display: block;
   width: 100%;
+  height: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
+}
+
+.middle{
+  width: 50%;
 }
 
 .transizione{
@@ -99,7 +125,7 @@ header span{
     clear: both;
     grid-template-columns: 50% 50%;
     margin: 0 5.5vw;
-    max-width: 100%;
+    max-width: 100vw;
   }
 
 .grid-titolo {
@@ -107,16 +133,20 @@ header span{
     clear: both;
     grid-template-columns: 100%;
     padding: 0 5.5vw;
+    width: 100%;
   }
 
 .grid-container > div {
     border: 3px solid white;
     font-size: 3vw;
     padding: 0 1vw ;
+    max-width: 86vw;
   }
 
 .grid-titolo > div {
     border: 3px solid white;
+    max-width: 86vw;
+
   }
 
 
@@ -148,9 +178,9 @@ header span{
       text-align: center;
   }
 
-main > div{
-  width: 90%;
-}
+/* main > div{
+  max-width: 80%;
+} */
 
 
 .out-main{
@@ -324,20 +354,23 @@ a:hover {
     width: 100vw;
     display: block;
     /* overflow: hidden; */
-  }
+    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;  }
   #titolo-servizi{
     width: 100vw;
     display: block;
-  }
+    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out; 
+    padding: .5em;
+    box-sizing: border-box;
+    overflow: hidden; }
   #titolo-outs{
     width: 100vw;
     display: block;
-  }
+    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;  }
   #titolo-canali{
     width: 100vw;
     display: block;
-  }
-/* 
+    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;}
+    /* 
   #titolo-sudinoi  #sudinoi-out:hover{
     display: none;
   }

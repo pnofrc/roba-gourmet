@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'RiksWeb';
+    src: url('../RiksWeb-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --color: ;
+    /* --color0: #6b0a9d;
+    --color1: #69ff5e;
+    --color2: #fdfd54; */
+
+    --white: #bfbfbf;
+}
+
+html{
+    font-family: 'RiksWeb';
+    color:  var(--white);
+    background: black;
+    max-width: 100%;  
+}
+
+body {
+    margin: 5vw 0;
+    padding: 0;
+ }
+
+
+
+#soon p{
+    text-align: center;
+    color:  var(--white);
+    font-size: 3vw;
+    margin: 5vw;
+    /* color:#6211c4; */
+}
+
+
+
+.head{
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    font-size: 18vw;
+    line-height: 14vw;
+    text-align: center;
+    width: 100%;
+    margin: 1vw 0;
+    color:var(--color)
+}
+
+.head span{
+    font-family: 'Inter Thin', sans-serif;
+    color:  var(--white);
+    padding: 0 5.5vw;
+}
+
+.head i{
+    font-family: 'Lato', sans-serif;
+    font-size: 14vw;
+}
+
+.head span2{
+    width: 100%;
+    font-size: 10vw;
+}
+
+
+
+
+
+p{ 
+    font-size: 11vw;
+    margin: 8vw;
+    color:  var(--white);
+    line-height: 11vw;
+}
+
+span{
+    color:var(--color);
+} 
+
+a{
+    color:var(--color);
+    transition: all 0.4s ease-in-out ;
+
+}
+
+a:hover{
+    color:  var(--white);
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+
+span3{
+    font-family: 'Lato', sans-serif;
+    color:var(--color);
+}
+
+
+
+
+
+
+#links {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    margin-bottom: 5vw;
+  }
+  
+#links  a {
+    width: 31vw;
+    text-align: center;
+    font-size: 10vw;
+    text-decoration: none;
+    color:var(--color);
+    transition: all 0.4s ease-in-out ;
+  }
+
+
+#links a:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+    color:  var(--white)
+}
