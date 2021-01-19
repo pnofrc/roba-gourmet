@@ -58,7 +58,11 @@
     <body style="cursor: zoom-in;">
 
 
-        <!-- <header>ROBA GOURMET <span>↓</span><i>STUDIO</i><span>↓</span></header> -->
+        <header>ROBA GOURMET <span>↓</span><i>STUDIO</i><span>↓</span></header> 
+
+        <div class="show">
+            <p>NOVITà NOVITà NOVITà NOVITà</p>
+        </div>
 
 
        <!-- <div id="release">
@@ -133,7 +137,8 @@
 
 
         <div class="blocco"> 
-            <div class="grid-titolo" >
+
+            <div class="grid-titolo">
                 <div id="titolo-outs">
                     <h1 id="outs-outs">OUTS</h1>
                     <h1 id="outs-in">LE NOSTRE RELEASE SU SPOTIFY</h1>
@@ -158,11 +163,13 @@
 
 
         <div class="blocco">
+
             <div class="grid-titolo">
                 <div id="titolo-sudinoi">
                     <h1>SU DI NOI</h1>
                 </div>
             </div>
+
             <div id="sudinoi">
                 <div class="grid-container">
                     <div>
@@ -174,6 +181,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
 
@@ -187,7 +195,7 @@
             <div id="canali">
                 <div class="grid-container">
                     <div>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p id="canalilinks"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                     </div>
                     <div>
@@ -200,32 +208,26 @@
 
     </main>
 
-    <!-- <div>
+    <div>
         <div id="sidenavDx">
-            <p></p>
-            <div class="cont">
-                <a target="_blank" href="https://www.instagram.com/robagourmet/?hl=it" class="fa fa-instagram"></a>
-                <a target="_blank" href="https://soundcloud.com/" class="fa fa-soundcloud"></a>
-                <a target="_blank" href="" class="fa fa-linkedin"></a>
-                <a target="_blank" href="https://t.me/robagourmet" class="fa fa-paper-plane-o"></a>
-            <!--  <a target="_blank" href="" class="fa fa-phone-square"></a> -->
-               <!--  <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope"></a>
-            </div>
+                <div class="cont">
+                    <a target="_blank" href="https://www.instagram.com/robagourmet/" class="fa fa-instagram"></a>
+                    <a href="#canalilinks" id="showCanali" class="fa fa-music"></a>
+                    <a target="_blank" href="" class="material-icons" id="work">work</a>
+                    <a target="_blank" href="https://t.me/robagourmet" class="fa fa-paper-plane-o"></a>
+                    <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope"></a>
+                    <a target="_blank" href="" class="material-icons" class="zoom">zoom_in</a>
 
+                </div>
         </div>
 
         <div id="sidenavSx">
-            <p>ROBA GOURMET STUDIO</p>
-            <div class="cont">
-                <a target="_blank" href="" class="material-icons" id="work">work</a>
-                <a target="_blank" href="" class="fa fa-music"></a>
-                <a target="_blank" href="" class="material-icons" class="zoom">zoom_in</a>
-                <a target="_blank" href="" class="fa fa-linkedin"></a>
-            </div>
+            <p>R<br>O<br>B<br>A<br><br>G<br>O<br>U<br>R<br>M<br>E<br>T<br><br>S<br>T<br>U<br>D<br>I<br>O</p>
         </div>
-    </div> -->
+
+    </div>  
     
-        <script>
+        <script async defer>
 
         var titservizi =  document.getElementById("titolo-servizi");
         var titouts = document.getElementById("titolo-outs");
@@ -236,6 +238,8 @@
         var outs = document.getElementById("outs"); 
         var sudinoi = document.getElementById("sudinoi");
         var canali = document.getElementById("canali");
+
+        var showCanali =  document.getElementById("showCanali");
 
         // var hservizi = servizi.clientHeight;
         // var wservizi = servizi.clientWidth;
@@ -302,6 +306,18 @@
                 titouts.style.display = "block";
                 titsudinoi.style.display = "block";
             });
+
+            showCanali.addEventListener("click", function(){
+                canali.style.display = "block";
+                servizi.style.display = "none";
+                outs.style.display = "none";
+                sudinoi.style.display = "none";
+                                
+                titcanali.style.display = "none";
+                titservizi.style.display = "block";
+                titouts.style.display = "block";
+                titsudinoi.style.display = "block";
+            });
             
 
 
@@ -342,7 +358,15 @@
             //             $(this).attr('scrollamount',5);
             //         });
 
+            const colors = ['#6b0a9d','#69ff5e','#fdfd54'];
 
+            function randomColor(colors) {
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+
+            let rc = randomColor(colors);
+
+            document.documentElement.style.setProperty('--color', rc);
 
         </script>
 
