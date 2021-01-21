@@ -8,221 +8,233 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stile.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-    <!-- <style>
-        .cont {
-            position: relative;
-            /* width: 50%; */
-          }
-          
-          .fade {
-            opacity: 1;
-            /* display: block; */
-            width: 100%;
-            height: auto;
-            transition: .5s ease;
-            backface-visibility: hidden;
-          }
-          
-          .middle {
-            transition: .5s ease;
-            opacity: 0;
-            position: absolute;
-            /* top: 50%;
-            left: 50%; */
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-          }
-          
-          .cont:hover .image {
-            opacity: 0.9;
-          }
-          
-          .cont:hover .middle {
-            opacity: 1;
-          }
-          
-          .image {
-            /* background-color: #4CAF50; */
-            /* color: white; */
-            font-size: 16px;
-            /* padding: 16px 32px; */
-            width: 90%;
-          }
-        
-          </style> -->
-        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
     </head>
+
+    
     <body style="cursor: zoom-in;">
 
 
         <header>ROBA GOURMET <span>↓</span><i>STUDIO</i><span>↓</span></header> 
 
-        <div class="show">
-            <p>NOVITà NOVITà NOVITà NOVITà</p>
-        </div>
+        <main>
+            <div>
 
 
-       <!-- <div id="release">
-            <div class="grid-container">
-                
-                <div>
-                    <h1 class="titolazzi red">SOON: sarcazzo</h1> 
-                </div>
-
-                <div>
-                    <h1 class="titolazzi fade">CRYSTAL PHILOSOPHY</h1>
-                </div>
-
-                <!--                 
-                <div class="middle">
-                    <h1 class="titolazzi fade">CRACKHEAD</h1> 
-                    <div >
-                        <img class="image" src="assets/2.png">
-                    </div>
-                </div> 
-
-            </div>
-        
-        </div>-->
+            <div class="blocco tit">
+                <div class="grid-titolo">
 
 
-    <main>
 
-    
-        <div class="blocco">
-            <div class="grid-titolo">
-                <div id="titolo-servizi">
-                    <h1 id="servizi-out">SERVIZI</h1>
                 </div>
             </div>
 
-            <div id="servizi">
-                <div class="grid-container">
-                    <div>
-                        <h1 class="titolazzi">SERVIZI</h1> 
-                    </div>
-                    <div class="mail">
-                        <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope" id="mail-icon"></a><a target="_blank" style="font-size: 5vw; color: white;">!!</a>
-                    </div> 
-                    <div>
-                        <p>Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</p>
-                    </div>
-                    <div>
-                        <h2 class="titolazzi">PRODUZIONI</h2>
-                    </div> 
-                    <div>
-                        <h2 class="titolazzi">REGISTRAZIONI</h2> 
-                    </div>  
-                    <div>
-                        <p>Lorem ipsum dolor...</p>
-                    </div>  
-                    <div>
-                        <p>Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</p>
-                    </div>
-                    <div>  
-                        <h2 class="titolazzi">MIXING</h2>  
-                    </div>       
-                    <div>
-                        <h2 class="titolazzi">MASTERING</h2> 
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor...</p>
-                    </div>
+            <div class="topnav">
+
+                <a href="#home">                       
+                    <div class="titolomobile">
+                        <marquee id="titolomobilep">ROBA GOURMET STUDIO</marquee>
+                    </div>         
+                </a>
+
+                <div id="myLinks">
+                    <a href="#serviziilinks" id="showServizi" class="material-icons" id="work">work</a>
+                    <a href="#outslinks" id="showOuts" class="fa fa-music"></a>
+                    <a href="#sudinoilinks" id="showSudinoi" class="material-icons" class="zoom">zoom_in</a>
+                    <a href="#canalilinks" id="showCanali" class="fa fa-soundcloud"></a>
+                    <hr>
+                    <a target="_blank" href="https://t.me/robagourmet" class="fa fa-paper-plane-o"></a>
+                    <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope"></a>
+                    <a target="_blank" href="https://www.instagram.com/robagourmet/" class="fa fa-instagram"></a>
                 </div>
-            </div>
-        </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i id="menu" class="fa fa-bars"></i>
+                  <i id="clos" class="fa fa-close"></i>
+                </a>
 
 
-        <div class="blocco"> 
-
-            <div class="grid-titolo">
-                <div id="titolo-outs">
-                    <h1 id="outs-outs">OUTS</h1>
-                    <h1 id="outs-in">LE NOSTRE RELEASE SU SPOTIFY</h1>
-                </div>
-            </div>
-            <div id="outs">
-
-                
-                <div class="grid-container">
-                    <div>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    </div>
-                    <div>
-                        <h1 class="titolazzi">OUTS</h1>
-                    </div> 
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="blocco">
-
-            <div class="grid-titolo">
-                <div id="titolo-sudinoi">
-                    <h1>SU DI NOI</h1>
-                </div>
             </div>
 
-            <div id="sudinoi">
-                <div class="grid-container">
-                    <div>
-                        <h1 class="titolazzi">SU DI NOI</h1>
-                    </div> 
-                    <div>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+
+
+
+
+            <div class="blocco">
+                <!-- <div class="grid-titolo"> -->
+
+                    <div class="show">
+                        <p>NOVITà NOVITà NOVITà NOVITà</p>
                     </div>
-                </div>
+
+                <!-- </div> -->
             </div>
 
-        </div>
 
 
-        <div class="blocco">
-            <div class="grid-titolo">
-                <div id="titolo-canali">
-                    <h1>CANALI</h1>
-                </div>
-            </div>     
-             
-            <div id="canali">
-                <div class="grid-container">
-                    <div>
-                    <p id="canalilinks"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+
+
+            <div class="blocco">
+                <div class="grid-titolo">
+                    <div id="titolo-servizi">
+                        <h1 id="servizi-out">SERVIZI</h1>
                     </div>
-                    <div>
-                        <h1 class="titolazzi">CANALI</h1>
-                    </div> 
+                </div>
+
+                <div id="servizi">
+
+                    <!-- <div class="grid-container dx">
+                        <div>
+                            <h1 class="titolazzi">SERVIZI</h1> 
+                        </div>
+                        <div class="mail">
+                            <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope" id="mail-icon"></a><a target="_blank" style="font-size: 5vw; color: white;">!!</a>
+                        </div>  -->
+
+                   
+
+                        <div class="grid-container sx">
+                            <div>
+                                <p id="contentServizi">Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</p>
+                            </div>
+                            <div>
+                                <h2 class="titolazzi">PRODUZIONI</h2>
+                            </div>
+                        </div>
+
+                        <div class="grid-container dx">   
+                            <div>
+                                <h2 class="titolazzi"> REC </h2> 
+                            </div>  
+                            <div>
+                                <p>Lorem ipsum dolor...</p>
+                            </div>  
+                        </div>
+
+                        <div class="grid-container sx">
+                            <div>
+                                <p>Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</p>
+                            </div>
+                            <div>
+                                <h2 class="titolazzi">MIXING</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="grid-container dx">
+                            <div>
+                                <h2 class="titolazzi">MASTERING</h2> 
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+                    
+                        
+
+
+
+
+            <div class="blocco"> 
+
+                <div class="grid-titolo">
+                    <div id="titolo-outs">
+                        <h1 id="outs-outs">OUTS</h1>
+                        <h1 id="outs-in">LE NOSTRE RELEASE SU SPOTIFY</h1>
+                    </div>
+                </div>
+
+                <div id="outs">
+
+                    <div class="grid-container sx">
+                        
+                        <div>
+                            <p id="contentOuts"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="titolazzi">OUTS</h1>
+                        </div> 
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="blocco">
+
+                <div class="grid-titolo">
+                    <div id="titolo-sudinoi">
+                        <h1>SU DI NOI</h1>
+                    </div>
+                </div>
+
+                <div id="sudinoi">
+                    <div class="grid-container dx">
+                        <div>
+                            <h1 class="titolazzi">SU DI NOI</h1>
+                        </div> 
+                        <div>
+                            <p id="contentSudinoi"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="blocco">
+                <div class="grid-titolo">
+                    <div id="titolo-canali">
+                        <h1>CANALI</h1>
+                    </div>
                 </div>     
-            </div>       
-        </div>
+                
+                <div id="canali">
+                    <div class="grid-container sx">
+                        <div>
+                            <p id="contentCanali"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="titolazzi">CANALI</h1>
+                        </div> 
+                    </div>     
+                </div>       
+            </div>
 
 
-    </main>
+        </main>
+
 
     <div>
         <div id="sidenavDx">
-                <div class="cont">
-                    <a target="_blank" href="https://www.instagram.com/robagourmet/" class="fa fa-instagram"></a>
-                    <a href="#canalilinks" id="showCanali" class="fa fa-music"></a>
-                    <a target="_blank" href="" class="material-icons" id="work">work</a>
-                    <a target="_blank" href="https://t.me/robagourmet" class="fa fa-paper-plane-o"></a>
-                    <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope"></a>
-                    <a target="_blank" href="" class="material-icons" class="zoom">zoom_in</a>
 
-                </div>
+            <a href="#serviziilinksD" id="showServiziD" class="material-icons" id="work">work</a>
+            <a href="#outslinksD" id="showOutsD" class="fa fa-music"></a>
+            <a href="#sudinoilinksD" id="showSudinoiD" class="material-icons" class="zoom">zoom_in</a>
+            <a href="#canalilinksD" id="showCanaliD" class="fa fa-soundcloud"></a>
+
+            <a target="_blank" href="https://t.me/robagourmet" class="fa fa-paper-plane-o"></a>
+            <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope"></a>
+            <a target="_blank" href="https://www.instagram.com/robagourmet/" class="fa fa-instagram"></a>
+        
         </div>
 
         <div id="sidenavSx">
-            <p>R<br>O<br>B<br>A<br><br>G<br>O<br>U<br>R<br>M<br>E<br>T<br><br>S<br>T<br>U<br>D<br>I<br>O</p>
+            <p class="desk">R<br>O<br>B<br>A<br><br>G<br>O<br>U<br>R<br>M<br>E<br>T<br><br>S<br>T<br>U<br>D<br>I<br>O</p>
+            <p class="mobile">ROBA GOURMET STUDIO</p>
         </div>
 
     </div>  
@@ -239,134 +251,280 @@
         var sudinoi = document.getElementById("sudinoi");
         var canali = document.getElementById("canali");
 
+        var showServizi =  document.getElementById("showServizi");
+        var showOuts =  document.getElementById("showOuts");
+        var showSudinoi =  document.getElementById("showSudinoi");
         var showCanali =  document.getElementById("showCanali");
 
-        // var hservizi = servizi.clientHeight;
-        // var wservizi = servizi.clientWidth;
-        // var houts = outs.clientHeight;
-        // var wouts = outs.clientHeight;
-        // var hsudinoi = sudinoi.clientHeight;
-        // var wsudinoi = sudinoi.clientHeight;
-        // var hcanali = canali.clientHeight;
-        // var wcanali = canali.clientHeight;
+        var showServiziD =  document.getElementById("showServiziD");
+        var showOutsD =  document.getElementById("showOutsD");
+        var showSudinoiD =  document.getElementById("showSudinoiD");
+        var showCanaliD =  document.getElementById("showCanaliD");
 
-        // servizi.style.height = hservizi + 'px';
-        // servizi.style.width = wservizi + 'px';
-        // outs.style.height = houts + 'px';
-        // outs.style.width = wouts + 'px';
-        // sudinoi.style.height = hsudinoi + 'px';
-        // sudinoi.style.width = wsudinoi + 'px';
-        // canali.style.height = hcanali + 'px';
-        // canali.style.width = wcanali + 'px';
+        var contentServizi = document.getElementById("contentServizi");
+        var contentOuts = document.getElementById("contentOuts");
+        var contentSudinoi = document.getElementById("contentSudinoi");
+        var contentCanali = document.getElementById("contentCanali")
+
+        var x = document.getElementById("myLinks");
+        var menu = document.getElementById("menu");
+        var clos = document.getElementById("clos");
+
+      
+
+        // $(window).scroll(function() {
+        //     if ($(window).scrollTop() > 100) {
+        //         document.getElementsByTagName("header").style.position = relative;
+        //     }
+        //     else {
+        //         // <= 100px from top - hide div
+        //     }
+        // });
+       
+
+        titservizi.addEventListener("click", function(){
+            servizi.style.display = "block";
+            canali.style.display = "none";
+            outs.style.display = "none";
+            sudinoi.style.display = "none";
+
+            titservizi.style.display = "none";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "block";
+
+            x.style.display = "none"
+
+            contentServizi.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+        });
+        
+
+        titouts.addEventListener("click", function(){
+            outs.style.display = "block";
+            servizi.style.display = "none";
+            canali.style.display = "none";
+            sudinoi.style.display = "none";
+                            
+            titouts.style.display = "none";
+            titservizi.style.display = "block";
+            titsudinoi.style.display = "block";
+
+            x.style.display = "none";
+
+            contentOuts.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+        });
+
+        titsudinoi.addEventListener("click", function(){
+            sudinoi.style.display = "block";
+            servizi.style.display = "none";
+            outs.style.display = "none";
+            canali.style.display = "none";
+                            
+            titsudinoi.style.display = "none";
+            titservizi.style.display = "block";
+            titouts.style.display = "block";
+            titcanali.style.display = "block";
+
+            x.style.display = "none";
+
+            contentSudinoi.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+        });
+
+        titcanali.addEventListener("click", function(){
+            canali.style.display = "block";
+            servizi.style.display = "none";
+            outs.style.display = "none";
+            sudinoi.style.display = "none";
+                            
+            titcanali.style.display = "none";
+            titservizi.style.display = "block";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "block";
+
+            x.style.display = "none";
+
+            contentCanali.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+        });
 
 
 
-            titservizi.addEventListener("click", function(){
-                servizi.style.display = "block";
-                canali.style.display = "none";
-                outs.style.display = "none";
-                sudinoi.style.display = "none";
 
-                titservizi.style.display = "none";
-                titouts.style.display = "block";
-                titsudinoi.style.display = "block";
-            });
+        showServizi.addEventListener("click", function(){
+            canali.style.display = "none";
+            servizi.style.display = "block";
+            outs.style.display = "none";
+            sudinoi.style.display = "none";
+                            
+            titcanali.style.display = "block";
+            titservizi.style.display = "none";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "block";
 
-            titouts.addEventListener("click", function(){
-                outs.style.display = "block";
-                servizi.style.display = "none";
-                canali.style.display = "none";
-                sudinoi.style.display = "none";
-                                
-                titouts.style.display = "none";
-                titservizi.style.display = "block";
-                titsudinoi.style.display = "block";
-            });
+            x.style.display = "none";
 
-            titsudinoi.addEventListener("click", function(){
-                sudinoi.style.display = "block";
-                servizi.style.display = "none";
-                outs.style.display = "none";
-                canali.style.display = "none";
-                                
-                titsudinoi.style.display = "none";
-                titservizi.style.display = "block";
-                titouts.style.display = "block";
-                titcanali.style.display = "block";
-            });
+            servizi.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
 
-            titcanali.addEventListener("click", function(){
-                canali.style.display = "block";
-               servizi.style.display = "none";
-                outs.style.display = "none";
-                sudinoi.style.display = "none";
-                                
-                titcanali.style.display = "none";
-                titservizi.style.display = "block";
-                titouts.style.display = "block";
-                titsudinoi.style.display = "block";
-            });
+        showOuts.addEventListener("click", function(){
+            canali.style.display = "none";
+            servizi.style.display = "none";
+            outs.style.display = "block";
+            sudinoi.style.display = "none";
+                            
+            titcanali.style.display = "block";
+            titservizi.style.display = "block";
+            titouts.style.display = "none";
+            titsudinoi.style.display = "block";
 
-            showCanali.addEventListener("click", function(){
-                canali.style.display = "block";
-                servizi.style.display = "none";
-                outs.style.display = "none";
-                sudinoi.style.display = "none";
-                                
-                titcanali.style.display = "none";
-                titservizi.style.display = "block";
-                titouts.style.display = "block";
-                titsudinoi.style.display = "block";
-            });
+            x.style.display = "none";
+
+            outs.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+        showSudinoi.addEventListener("click", function(){
+            canali.style.display = "none";
+            servizi.style.display = "none";
+            outs.style.display = "none";
+            sudinoi.style.display = "block";
+                            
+            titcanali.style.display = "block";
+            titservizi.style.display = "block";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "none";
+
+            x.style.display = "none";
+
+            sudinoi.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+        showCanaliD.addEventListener("click", function(){
+            canali.style.display = "block";
+            servizi.style.display = "none";
+            outs.style.display = "none";
+            sudinoi.style.display = "none";
+                            
+            titcanali.style.display = "none";
+            titservizi.style.display = "block";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "block";
+
+            canali.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+
+            x.style.display = "none";
+
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+
+        showServiziD.addEventListener("click", function(){
+            canali.style.display = "none";
+            servizi.style.display = "block";
+            outs.style.display = "none";
+            sudinoi.style.display = "none";
+                            
+            titcanali.style.display = "block";
+            titservizi.style.display = "none";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "block";
+
+            x.style.display = "none";
+
+            servizi.scrollTo({top: 0, behavior: 'smooth'});
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+        showOutsD.addEventListener("click", function(){
+            canali.style.display = "none";
+            servizi.style.display = "none";
+            outs.style.display = "block";
+            sudinoi.style.display = "none";
+                            
+            titcanali.style.display = "block";
+            titservizi.style.display = "block";
+            titouts.style.display = "none";
+            titsudinoi.style.display = "block";
+
+            x.style.display = "none";
+
+            outs.scrollTo({top: 0, behavior: 'smooth'});
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+        showSudinoiD.addEventListener("click", function(){
+            canali.style.display = "none";
+            servizi.style.display = "none";
+            outs.style.display = "none";
+            sudinoi.style.display = "block";
+                            
+            titcanali.style.display = "block";
+            titservizi.style.display = "block";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "none";
+
+            x.style.display = "none";
+
+            sudinoi.scrollTo({top: 0, behavior: 'smooth'});
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+        showCanaliD.addEventListener("click", function(){
+            canali.style.display = "block";
+            servizi.style.display = "none";
+            outs.style.display = "none";
+            sudinoi.style.display = "none";
+                            
+            titcanali.style.display = "none";
+            titservizi.style.display = "block";
+            titouts.style.display = "block";
+            titsudinoi.style.display = "block";
+
+            x.style.display = "none";
             
-
-
-            // var x = document.getElementById('titolo-sudinoi');
-
-            // function myFunction() {
-            //     style.display = fixed;
-            // }
-
-            // function myFunction1() {
-            //     $('#titolo-sudinoi').marquee({
-            //     duration: 3000,
-            //     direction: 'left',
-            //     duplicated: true,
-            // });
-            
-            // }
+            canali.scrollTo({top: '20vw', behavior: 'smooth'});
+        });
 
 
 
 
 
-                // $('#titolo-sudinoi').marquee({
-                // duration: 0,
-                // gap: 20,
-                // delayBeforeStart: 0,
-                // direction: 'left',
-                // duplicated: false,
-                // allowCss3Support: true,
-                //             });
-            
 
 
-            // $(function() {
-            //     $('#titolo-sudinoi').mouseout(function() {
-            //             $(this).attr('scrollamount',0);
-            //         }).mouseover(function() {
-            //             $(this).attr('scrollamount',5);
-            //         });
 
-            const colors = ['#6b0a9d','#69ff5e','#fdfd54'];
 
-            function randomColor(colors) {
-                return colors[Math.floor(Math.random() * colors.length)];
+        function myFunction() {
+
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+                menu.style.display="flex";
+                clos.style.display="none";
+
+            } else {
+                x.style.display = "flex";
+                menu.style.display="none";
+                clos.style.display="inline";
             }
 
-            let rc = randomColor(colors);
+            x.scrollIntoView();
+}
 
-            document.documentElement.style.setProperty('--color', rc);
+        const colors = ['#6b0a9d','#69ff5e','#fdfd54'];
+
+        function randomColor(colors) {
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        let rc = randomColor(colors);
+
+        document.documentElement.style.setProperty('--color', rc);
 
         </script>
 
