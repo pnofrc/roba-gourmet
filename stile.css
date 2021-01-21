@@ -13,7 +13,6 @@
 
 
 html{
-  /*font-family: 'Inter', sans-serif;*/
   font-family: 'RiksWeb';
   color: var(--color);
   background: black;
@@ -26,6 +25,12 @@ body{
   width: 100%;
   scroll-behavior: smooth;
 }
+
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
+ }
 
 .mobile{
   display: none
@@ -41,7 +46,6 @@ hr{
   size: 30px;
   width: 30px;
 }
-
 
 
 /* //////////////////////////////////////////////////// */
@@ -73,12 +77,6 @@ header span{
     font-size: 10vw;
     padding: 0 6vw;
 }
-
-main{
-  /* position: fixed; */
-  /* position: static */
-}
-
 
 
 
@@ -195,28 +193,7 @@ main{
       text-align: center;
   }
 
-/* main > div{
-  max-width: 80%;
-} */
 
-
-/* .out-main{
-    margin: 0 5vw;
-}
-
-.release{
-text-align: center;
-} */
-
-
-/*.column{
-    float: left;
-    flex: 50vw;
-    padding: 1vw;
-    border: solid white 3px;
-    min-width: 30vw;
-    max-width: 140vw;
-  } */
 
 .titolazzi{
     font-size: 10vw;
@@ -261,17 +238,13 @@ text-align: center;
 }
 
 #sidenavSx p{
-    /* padding-right: 10vw ; */
     font-size: 3vw;
     text-align: center;
     height: 10%;
-    /* border: red 1px solid; */
-    /* writing-mode: vertical-lr; */
-    /* height: 50%; */
-    transform: rotate(90deg);
-    /* bottom: 9px; */
 
-     -moz-transform: translateY(100%);
+    transform: rotate(90deg);
+
+    -moz-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     transform: translateY(100%); 
     -moz-animation: scrollTit 2s linear infinite;
@@ -279,10 +252,6 @@ text-align: center;
     animation: scrollTit 5s ease-in-out infinite;
     line-height: 2.8vw;
 }
-
-/* #sidenavSx .mobile{
-  display: none;
-} */
 
 
 @keyframes  scrollTit{
@@ -304,34 +273,31 @@ text-align: center;
 
 
 
+#sidenavDx{
+  height: 100%;
+  width: 6vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;     
+  overflow-x: hidden;
+  padding-top: 10px;
+  border-left: solid 3px var(--white);;
+  background-color: black;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-#sidenavDx p{
+
+
+
+/* #sidenavDx p{
     transform: rotate(90deg);
     font-size: 1.5vw;
-
     text-align: left;
-    /* margin-top: 3vw; */
-}
-
-
-
-
-
-#sidenavDx{
-    height: 100%;
-    width: 6vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;     
-    overflow-x: hidden;
-    padding-top: 10px;
-    border-left: solid 3px var(--white);;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+} */
 
 
 #sidenavDx a{
@@ -342,9 +308,18 @@ text-align: center;
     margin: 1vw 0;
     position: relative;
     bottom: 2vw;
-    color: var(--white);
- 
+    color: var(--color);
 }
+
+#sidenavDx a:nth-child(1){
+  color: var(--white);}
+
+#sidenavDx a:nth-child(9){
+  color: var(--white);}
+#sidenavDx a:nth-child(7){
+  color: var(--white);}
+#sidenavDx a:nth-child(8){
+  color: var(--white);}
 
 #sidenavDx a:hover{
     color: var(--color);
@@ -485,6 +460,15 @@ a:hover {
       display: none;}
 
 
+      #langITA{
+        display: none;
+      }
+      
+      
+      #langITAm{
+        display: none;
+      }
+
 
 
 
@@ -531,7 +515,7 @@ main{
   width: 100vw;
   position: absolute;
   height: 12vw;
-  
+  top: 25vw
 }
 
 
@@ -548,18 +532,15 @@ main{
 }
 
 #titolomobilep{
-
   font-size:20vw;
-
-
 }
 
 #titolomobilep marquee{
   color: var(--color);
 
-  -moz-animation: scrollMob 5s ease-in-out infinite;
+  /* -moz-animation: scrollMob 5s ease-in-out infinite;
   -webkit-animation: scrollMob 5s ease-in-out infinite;
-  animation: scrollMob 5s ease-in-out infinite; 
+  animation: scrollMob 5s ease-in-out infinite;  */
 
 }
 
@@ -727,19 +708,22 @@ main{
 #clos{
   display: none;
 }
+
 .topnav {
   overflow: hidden;
-  position: relative;
+  position: fixed;
   border:var(--white) 3px solid;
   width: 100%;
   display:table;
+  background-color: black; 
+  z-index: 30
 }
 
 .topnav #myLinks {
   display: none;
   right: 0;
   z-index: 100;
-  width: 24vw;
+  width: 20vw;
   height:80%;
   justify-content: space-evenly;
   flex-direction: column;

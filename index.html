@@ -17,6 +17,41 @@
 
         <header>ROBA GOURMET <span>↓</span><i>STUDIO</i><span>↓</span></header> 
 
+
+
+
+
+        <div class="topnav">
+
+            <a href="#home">                       
+                <div class="titolomobile">
+                    <marquee id="titolomobilep">ROBA GOURMET STUDIO</marquee>
+                </div>         
+            </a>
+
+            <div id="myLinks">
+                <a href="#langEN" id="langEN">EN</a>
+                <a href="#langITA" id="langITA">ITA</a>
+                <hr>
+                <a href="#serviziilinks" id="showServizi" class="material-icons" id="work">work</a>
+                <a href="#outslinks" id="showOuts" class="fa fa-music"></a>
+                <a href="#sudinoilinks" id="showSudinoi" class="material-icons" class="zoom">zoom_in</a>
+                <a href="#canalilinks" id="showCanali" class="fa fa-soundcloud"></a>
+                <hr>
+                <a target="_blank" href="https://t.me/robagourmet" class="fa fa-paper-plane-o"></a>
+                <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope"></a>
+                <a target="_blank" href="https://www.instagram.com/robagourmet/" class="fa fa-instagram"></a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i id="menu" class="fa fa-bars"></i>
+              <i id="clos" class="fa fa-close"></i>
+            </a>
+
+
+        </div>
+
+
         <main>
             <div>
 
@@ -29,32 +64,7 @@
                 </div>
             </div>
 
-            <div class="topnav">
-
-                <a href="#home">                       
-                    <div class="titolomobile">
-                        <marquee id="titolomobilep">ROBA GOURMET STUDIO</marquee>
-                    </div>         
-                </a>
-
-                <div id="myLinks">
-                    <a href="#serviziilinks" id="showServizi" class="material-icons" id="work">work</a>
-                    <a href="#outslinks" id="showOuts" class="fa fa-music"></a>
-                    <a href="#sudinoilinks" id="showSudinoi" class="material-icons" class="zoom">zoom_in</a>
-                    <a href="#canalilinks" id="showCanali" class="fa fa-soundcloud"></a>
-                    <hr>
-                    <a target="_blank" href="https://t.me/robagourmet" class="fa fa-paper-plane-o"></a>
-                    <a target="_blank" href="mailto: robagourmetstudio@gmail.com" class="fa fa-envelope"></a>
-                    <a target="_blank" href="https://www.instagram.com/robagourmet/" class="fa fa-instagram"></a>
-                </div>
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i id="menu" class="fa fa-bars"></i>
-                  <i id="clos" class="fa fa-close"></i>
-                </a>
-
-
-            </div>
+            
 
 
 
@@ -220,6 +230,8 @@
 
     <div>
         <div id="sidenavDx">
+            <a href="#langENm" id="langENm">EN<br></a>
+            <a href="#langITAm" id="langITAm">ITA<br></a>
 
             <a href="#serviziilinksD" id="showServiziD" class="material-icons" id="work">work</a>
             <a href="#outslinksD" id="showOutsD" class="fa fa-music"></a>
@@ -270,6 +282,12 @@
         var menu = document.getElementById("menu");
         var clos = document.getElementById("clos");
 
+        var en = document.getElementById("langEN");
+        var ita = document.getElementById("langITA");
+
+        var enM = document.getElementById("langENm");
+        var itaM = document.getElementById("langITAm");
+
       
 
         // $(window).scroll(function() {
@@ -281,6 +299,48 @@
         //     }
         // });
        
+        ita.addEventListener("click", function(){
+            en.style.display = "block";
+            ita.style.display = "none";
+
+            x.style.display = "none";
+
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+        en.addEventListener("click", function(){
+            ita.style.display = "block";
+            en.style.display = "none";
+
+            x.style.display = "none";
+
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+
+        itaM.addEventListener("click", function(){
+            enM.style.display = "block";
+            itaM.style.display = "none";
+
+            x.style.display = "none";
+
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+        enM.addEventListener("click", function(){
+            itaM.style.display = "block";
+            enM.style.display = "none";
+
+            x.style.display = "none";
+
+            menu.style.display="inline";
+            clos.style.display="none";
+        });
+
+
 
         titservizi.addEventListener("click", function(){
             servizi.style.display = "block";
@@ -402,7 +462,7 @@
             clos.style.display="none";
         });
 
-        showCanaliD.addEventListener("click", function(){
+        showCanali.addEventListener("click", function(){
             canali.style.display = "block";
             servizi.style.display = "none";
             outs.style.display = "none";
@@ -490,6 +550,8 @@
             x.style.display = "none";
             
             canali.scrollTo({top: '20vw', behavior: 'smooth'});
+            menu.style.display="inline";
+            clos.style.display="none";
         });
 
 
