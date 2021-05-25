@@ -3,7 +3,13 @@
     src: url('RiksWeb-Normal.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+  font-family: 'brut';
+  src: url('brut_grotesque-text-webfont.woff') format('woff');
+  font-weight: thin;
+  font-style: thin;
 }
 
 :root{
@@ -40,6 +46,9 @@ html, body {
   display: none;
 }
 
+#changeLang{
+  height: 100px;
+}
 
 hr{
   color: var(--white);
@@ -482,7 +491,9 @@ a:hover {
 
 
 
-
+p{
+  font-family: brut;
+}
 
 
 

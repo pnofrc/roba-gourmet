@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stile.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+        <script src="jquery-3.6.0.min.js"></script>     
     </head>
 
     
@@ -30,8 +31,7 @@
             </a>
 
             <div id="myLinks">
-                <a href="#langEN" id="langEN">EN</a>
-                <a href="#langITA" id="langITA">ITA</a>
+                <button id="changeLang" onclick="changeLanguage()"><span lang="it"></span>EN<span lang="en">IT</span></button>
                 <hr>
                 <a href="#serviziilinks" id="showServizi" class="material-icons" id="work">work</a>
                 <a href="#outslinks" id="showOuts" class="fa fa-music"></a>
@@ -74,7 +74,7 @@
                 <!-- <div class="grid-titolo"> -->
 
                     <div class="show">
-                        <p>NOVITà NOVITà NOVITà NOVITà</p>
+                        <p><span lang="it">NOVITÀ NOVITÀ NOVITÀ NOVITÀ</span><span lang="en">NEWS NEWS NEWS NEWS</span></p>
                     </div>
 
                 <!-- </div> -->
@@ -87,7 +87,7 @@
             <div class="blocco">
                 <div class="grid-titolo">
                     <div id="titolo-servizi">
-                        <h1 id="servizi-out">SERVIZI</h1>
+                        <h1 id="servizi-out"><span lang="it">SERVIZI</span><span lang="en">SERVICES</span></h1>
                     </div>
                 </div>
 
@@ -105,25 +105,28 @@
 
                         <div class="grid-container sx">
                             <div>
-                                <p id="contentServizi">Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</p>
+                                <p id="contentServizi"><span lang="it">Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</span>
+                                    <span lang="en">LOREM IPSUM</span></p>
                             </div>
                             <div>
-                                <h2 class="titolazzi">PRODUZIONI</h2>
+                                <h2 class="titolazzi"><span lang="it">PRODUZIONI</span><span lang="en">PRODUCTIONS</span></h2>
                             </div>
                         </div>
 
                         <div class="grid-container dx">   
                             <div>
-                                <h2 class="titolazzi"> REC </h2> 
+                                <h2 class="titolazzi">REC </h2> 
                             </div>  
                             <div>
-                                <p>Lorem ipsum dolor...</p>
+                                <p><span lang="it">Lorem ipsum dolor...</span>
+                                    <span lang="en">LOREM IPSUM</span></p>
                             </div>  
                         </div>
 
                         <div class="grid-container sx">
                             <div>
-                                <p>Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</p>
+                                <p><span lang="it">Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor... Lorem ipsum dolor...</span>
+                                    <span lang="en">LOREM IPSUM</span></p>
                             </div>
                             <div>
                                 <h2 class="titolazzi">MIXING</h2>
@@ -136,7 +139,8 @@
                                 <h2 class="titolazzi">MASTERING</h2> 
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor...</p>
+                                <p><span lang="it">Lorem ipsum dolor...</span>
+                                    <span lang="en">LOREM IPSUM</span></p>
                             </div>
                         </div>
                     </div>
@@ -155,7 +159,8 @@
                 <div class="grid-titolo">
                     <div id="titolo-outs">
                         <h1 id="outs-outs">OUTS</h1>
-                        <h1 id="outs-in">LE NOSTRE RELEASE SU SPOTIFY</h1>
+                        <h1 id="outs-in"><span lang="it">LE NOSTRE RELEASE SU SPOTIFY</span>
+                            <span lang="en">OUR RELEASES ON SPOTIFY</span></h1>
                     </div>
                 </div>
 
@@ -164,7 +169,8 @@
                     <div class="grid-container sx">
                         
                         <div>
-                            <p id="contentOuts"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p id="contentOuts"><span lang="it">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                <span lang="en">LOREM IPSUM</span>
                             </p>
                         </div>
                         <div>
@@ -183,17 +189,20 @@
 
                 <div class="grid-titolo">
                     <div id="titolo-sudinoi">
-                        <h1>SU DI NOI</h1>
+                        <h1><span lang="it">SU DI NOI</span>
+                            <span lang="en">ABOUT US</span></h1>
                     </div>
                 </div>
 
                 <div id="sudinoi">
                     <div class="grid-container dx">
                         <div>
-                            <h1 class="titolazzi">SU DI NOI</h1>
+                            <h1 class="titolazzi"><span lang="it">SU DI NOI</span>
+                                <span lang="en">ABOUT US</span></h1>
                         </div> 
                         <div>
-                            <p id="contentSudinoi"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p id="contentSudinoi"><span lang="it">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                <span lang="en">LOREM IPSUM</span>
                             </p>
                         </div>
                     </div>
@@ -207,18 +216,21 @@
             <div class="blocco">
                 <div class="grid-titolo">
                     <div id="titolo-canali">
-                        <h1>CANALI</h1>
+                        <h1><span lang="it">CANALI</span>
+                        <span lang="en">CHANNELS</span></h1>
                     </div>
                 </div>     
                 
                 <div id="canali">
                     <div class="grid-container sx">
                         <div>
-                            <p id="contentCanali"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p id="contentCanali"><span lang="it">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                                <span lang="en">LOREM IPSUM</span>
                             </p>
                         </div>
                         <div>
-                            <h1 class="titolazzi">CANALI</h1>
+                            <h1 class="titolazzi"><span lang="it">CANALI</h1></span>
+                            <span lang="en">CHANNELS</span>
                         </div> 
                     </div>     
                 </div>       
@@ -230,8 +242,8 @@
 
     <div>
         <div id="sidenavDx">
-            <a href="#langENm" id="langENm">EN<br></a>
-            <a href="#langITAm" id="langITAm">ITA<br></a>
+            <button id="changeLang" onclick="changeLanguage()"><span lang="it"></span>EN<span lang="en">IT</span></button>
+
 
             <a href="#serviziilinksD" id="showServiziD" class="material-icons" id="work">work</a>
             <a href="#outslinksD" id="showOutsD" class="fa fa-music"></a>
@@ -252,6 +264,8 @@
     </div>  
     
         <script async defer>
+
+        $('[lang="en"]').hide();
 
         var titservizi =  document.getElementById("titolo-servizi");
         var titouts = document.getElementById("titolo-outs");
@@ -282,11 +296,11 @@
         var menu = document.getElementById("menu");
         var clos = document.getElementById("clos");
 
-        var en = document.getElementById("langEN");
-        var ita = document.getElementById("langITA");
+        // var en = document.getElementById("langEN");
+        // var ita = document.getElementById("langITA");
 
-        var enM = document.getElementById("langENm");
-        var itaM = document.getElementById("langITAm");
+        // var enM = document.getElementById("langENm");
+        // var itaM = document.getElementById("langITAm");
 
       
 
@@ -299,46 +313,53 @@
         //     }
         // });
        
-        ita.addEventListener("click", function(){
-            en.style.display = "block";
-            ita.style.display = "none";
+        // ita.addEventListener("click", function(){
+        //     en.style.display = "block";
+        //     ita.style.display = "none";
 
-            x.style.display = "none";
+        //     x.style.display = "none";
 
-            menu.style.display="inline";
-            clos.style.display="none";
-        });
+        //     menu.style.display="inline";
+        //     clos.style.display="none";
+        // });
 
-        en.addEventListener("click", function(){
-            ita.style.display = "block";
-            en.style.display = "none";
+        // en.addEventListener("click", function(){
+        //     ita.style.display = "block";
+        //     en.style.display = "none";
 
-            x.style.display = "none";
+        //     x.style.display = "none";
 
-            menu.style.display="inline";
-            clos.style.display="none";
-        });
+        //     menu.style.display="inline";
+        //     clos.style.display="none";
+        // });
+
+       function changeLanguage(){
+            console.log('test')
+            $('[lang="it"]').toggle();
+            $('[lang="en"]').toggle();
+        }
 
 
-        itaM.addEventListener("click", function(){
-            enM.style.display = "block";
-            itaM.style.display = "none";
 
-            x.style.display = "none";
+        // itaM.addEventListener("click", function(){
+        //     enM.style.display = "block";
+        //     itaM.style.display = "none";
 
-            menu.style.display="inline";
-            clos.style.display="none";
-        });
+        //     x.style.display = "none";
 
-        enM.addEventListener("click", function(){
-            itaM.style.display = "block";
-            enM.style.display = "none";
+        //     menu.style.display="inline";
+        //     clos.style.display="none";
+        // });
 
-            x.style.display = "none";
+        // enM.addEventListener("click", function(){
+        //     itaM.style.display = "block";
+        //     enM.style.display = "none";
 
-            menu.style.display="inline";
-            clos.style.display="none";
-        });
+        //     x.style.display = "none";
+
+        //     menu.style.display="inline";
+        //     clos.style.display="none";
+        // });
 
 
 
