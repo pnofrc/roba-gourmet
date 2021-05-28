@@ -25,12 +25,13 @@ html{
   background: black;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body{
   max-width: 100%;  
   width: 100%;
-  scroll-behavior: smooth;
+
 }
 
 html, body {
@@ -65,6 +66,7 @@ hr{
 
 
 header{
+
         font-size: 20vw; 
         text-align: center;
         background-color: black;
