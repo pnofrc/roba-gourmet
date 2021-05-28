@@ -14,6 +14,7 @@
 
 :root{
   --color: ;
+  --color2: ;
   --white: #bfbfbf;
 }
 
@@ -33,7 +34,7 @@ body{
 }
 
 html, body {
-  height:100%;
+  height:100vh;
   padding:0;
   margin:0;
  }
@@ -67,26 +68,44 @@ header{
         font-size: 20vw; 
         text-align: center;
         background-color: black;
-        line-height: 17vw;
-        width: 99%;
-
+        /* line-height: 17vw; */
+        width: 100%;
+        height: 100vh;
         z-index: 10;
-        margin-top: -1vw;
+        /* margin-top: -1vw; */
         position: relative;
+        /* border: solid 1px blue; */
 
 }
-
+/* 
 header i{
     font-family: 'Inter Thin', sans-serif;
     font-size: 15vw;
-}
+} */
 
 header span{
     font-family: 'Inter Thin', sans-serif;
     font-size: 10vw;
-    padding: 0 6vw;
+    /* padding: 0 6vw; */
 }
 
+header svg{
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+
+  /* border: solid 1px red; */
+  
+}
+
+.a{
+  fill: var(--color2)
+}
+
+.b{
+  fill: var(--color)
+}
 
 
 /* //////////////////////////////////////////////////// */
