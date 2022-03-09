@@ -52,10 +52,14 @@ body {
     height: 100px;
 }
 
-hr {
+.releases hr {
     color: var(--white);
-    size: 30px;
-    width: 30px;
+}
+
+.releases {
+    color: var(--color2);
+    border: solid var(--color) 2px;
+    text-align: center;
 }
 
 
@@ -355,11 +359,12 @@ header svg {
 
 a {
     transition: all 0.3s ease-in;
+    color: var(--color2);
 }
 
 a:hover {
     transform: scale(1.2);
-    color: var(--color);
+    color: var(--white);
 }
 
 
@@ -513,6 +518,12 @@ a.fa-paper-plane-o:hover {
     color: var(--color)!important
 }
 
+.news {
+    display: block;
+    width: 400%;
+    text-align: left;
+}
+
 @media only screen and (max-width:800px) {
     body {
         max-width: 100%;
@@ -521,6 +532,10 @@ a.fa-paper-plane-o:hover {
     }
     header {
         display: none;
+    }
+    #myLinks hr {
+        size: 30px;
+        width: 30px;
     }
     #sidenavSx {
         display: none;
@@ -579,7 +594,7 @@ a.fa-paper-plane-o:hover {
         font-size: 10vw;
         margin: 0;
         height: 90%;
-        width: 5000%;
+        width: 10000%;
         -moz-animation: scrollMobNews 20s linear infinite;
         -webkit-animation: scrollMobNews 20s linear infinite;
         animation: scrollMobNews 20s linear infinite;
