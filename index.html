@@ -58,7 +58,7 @@
               </svg>
         </a>
 
-        <!-- <span>↓</span> -->
+        <span id="welcome">↓</span>
     </header>
 
 
@@ -262,35 +262,35 @@
                             <span lang="it">
                                 PRESTO SU TUTTE LE PIATTAFORME!
                                 <br><br>
-                                Crackhead Massacre, Mandingo + Cesarek, 2020<br>
-                                Crystal Philosophy, Mandingo, 2020<br>
-                                Cyanide Poisoning, HCN, 2020<br>
-                                Traphouse Overdose, Mandingo + Cesarek, 2020<br>
-                                Dorothy's Trip, Maningo, 2021<br>
-                                Extraterrestrial Experimental Lab, HCN, 2021<br>
-                                <a href="http://federicoponi.it/praxis">"PRAXIS"</a> EP, Mandingo + HCN + Boy Stout, 2021
+                                Crackhead Massacre, Mandingo + Cesarek, 2020<hr>
+                                Crystal Philosophy, Mandingo, 2020<hr>
+                                Cyanide Poisoning, HCN, 2020<hr>
+                                Traphouse Overdose, Mandingo + Cesarek, 2020<hr>
+                                Dorothy's Trip, Maningo, 2021<hr>
+                                Extraterrestrial Experimental Lab, HCN, 2021<hr>
+                                <a target="_blank"href="http://federicoponi.it/praxis">"PRAXIS"</a> EP, Mandingo + HCN + Boy Stout, 2021
                                 <br><br><br>
                                 PROSSIME USCITE
                                 <br><br>
-                                Gustav, Disumanuel, 2022<br>
-                                Roba Gourmet Jamming EP, featuring tra Mandingo + HCN + Boy Stout, 2022<br>
+                                Gustav, Disumanuel, 2022<hr>
+                                Roba Gourmet Jamming EP, featuring tra Mandingo + HCN + Boy Stout, 2022<hr>
                                 Crackhead Massacre vol. 2, Mandingo + Cesarek, 2022</span>
 
                         <span lang="en">
                             SOON ON ALL PLATFORMS!
                             <br><br>
-                            Crackhead Massacre, Mandingo + Cesarek, 2020<br>
-                            Crystal Philosophy, Mandingo, 2020<br>
-                            Cyanide Poisoning, HCN, 2020<br>
-                            Traphouse Overdose, Mandingo + Cesarek, 2020<br>
-                            Dorothy's Trip, Maningo, 2021<br>
-                            Extraterrestrial Experimental Lab, HCN, 2021<br>
-                            <a href="http://federicoponi.it/praxis">"PRAXIS"</a> EP, Mandingo + HCN + Boy Stout, 2021 
+                            Crackhead Massacre, Mandingo + Cesarek, 2020<hr>
+                            Crystal Philosophy, Mandingo, 2020<hr>
+                            Cyanide Poisoning, HCN, 2020<hr>
+                            Traphouse Overdose, Mandingo + Cesarek, 2020<hr>
+                            Dorothy's Trip, Maningo, 2021<hr>
+                            Extraterrestrial Experimental Lab, HCN, 2021<hr>
+                            <a target="_blank" href="http://federicoponi.it/praxis">"PRAXIS"</a> EP, Mandingo + HCN + Boy Stout, 2021 
                             <br><br><br>
                             NEXT RELEASES
                             <br><br>
-                            Gustav, Disumanuel, 2022<br>
-                            Roba Gourmet Jamming EP, featuring between Mandingo + HCN + Boy Stout, 2022<br>
+                            Gustav, Disumanuel, 2022<hr>
+                            Roba Gourmet Jamming EP, featuring between Mandingo + HCN + Boy Stout, 2022<hr>
                             Crackhead Massacre vol. 2, Mandingo + Cesarek, 2022</span>
                         </p>
                 </div>
@@ -409,7 +409,14 @@
 
     </div>
 
-    <script async defer>
+    <script>
+        $(document).ready(function() {
+            $('body').fadeIn(3000)
+            $('#welcome').delay(2000).fadeIn(2000)
+                // alert()
+        });
+
+
         $('[lang="en"]').hide();
 
         var titservizi = document.getElementById("titolo-servizi");

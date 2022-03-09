@@ -28,6 +28,7 @@ html {
 }
 
 body {
+    display: none;
     max-width: 100%;
     width: 100%;
 }
@@ -81,9 +82,16 @@ header i{
 } */
 
 header span {
-    font-family: 'Inter Thin', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 10vw;
+    position: relative;
+    bottom: 50%;
+    left: 0;
+    /* border: solid; */
+    width: 90%;
+    text-align: center;
     /* padding: 0 6vw; */
+    display: none;
 }
 
 header svg {
@@ -91,6 +99,8 @@ header svg {
     margin: auto;
     width: 90%;
     height: 100%;
+    bottom: 10%;
+    position: relative;
     /* border: solid 1px red; */
 }
 
