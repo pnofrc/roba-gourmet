@@ -24,7 +24,7 @@ html {
     background: black;
     width: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -170,6 +170,7 @@ header svg {
 .blocco {
     width: 86vw;
     margin-left: 5.5vw;
+    /* margin-top: 50% ; */
     /* display: none; */
 }
 
@@ -524,6 +525,10 @@ a.fa-paper-plane-o:hover {
     text-align: left;
 }
 
+.loghino{
+    display: none;
+}
+
 @media only screen and (max-width:800px) {
     body {
         max-width: 100%;
@@ -549,25 +554,57 @@ a.fa-paper-plane-o:hover {
         height: 12vw;
         top: 25vw
     }
-    .titolomobile {
-        border-right: var(--white) 5px solid;
+
+
+    .titolomobile{
+        border-right:var(--white) 5px solid;
         width: 75%;
+        margin: 0;
+        height: 24vw;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      
+      #titolomobilep{
+        position: absolute;
+        width: 200%;
+        font-size:13vw !important;
+        -moz-animation: scrollMob 15s ease-in-out infinite;
+        -webkit-animation: scrollMob 15s ease-in-out infinite;
+        animation: scrollMob 15s ease-in-out infinite;  
+  
+      }
+      
+  
+    /* .titolomobile {
+        border-right: var(--white) 5px solid;
+        width: auto;
         margin: 0;
         height: 24vw;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-    }
+        
+    }*/
     #titolomobilep {
         font-size: 20vw;
+        /* width: 100%; 
+        color: var(--color); */
+          } 
+
+    #loghino svg {
+        width: 1000px;
+        position: fixed;
+        height: 35%;
+        -moz-animation: scrollMob 10s linear infinite; 
+        -webkit-animation: scrollMob 10s linear infinite; 
+        animation: scrollMob 10s linear infinite; 
     }
-    #titolomobilep marquee {
-        color: var(--color);
-        /* -moz-animation: scrollMob 5s ease-in-out infinite;
-  -webkit-animation: scrollMob 5s ease-in-out infinite;
-  animation: scrollMob 5s ease-in-out infinite;  */
-    }
+
     @keyframes scrollMob {
         0% {
             -moz-transform: translateX(100%);
@@ -584,7 +621,7 @@ a.fa-paper-plane-o:hover {
         border: var(--white) 3px solid;
         width: 100%;
         margin: 0;
-        height: 12vw;
+        height: 16vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -672,11 +709,11 @@ a.fa-paper-plane-o:hover {
     }
     .grid-container p {
         font-size: 8vw;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         height: auto;
     }
     .titolazzi {
-        height: 100%;
+        /* height: 100%; */
         animation: titolazzi 2s ease-in-out infinite;
     }
     @keyframes titolazzi {
@@ -738,5 +775,32 @@ a.fa-paper-plane-o:hover {
         top: 0;
         justify-content: center;
         align-items: center;
+    }
+
+    .blocco div{
+        overflow-y: scroll;
+    }
+
+    .blocco p span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin: 5%;     
+    }
+
+    /* .blocco p span{ */
+        /* width: 2000%; */
+    /* } */
+    /* .blocco{
+        top: 0;
+    } */
+
+    .grid-container div{
+       flex-direction: column;
+    }
+
+    .blocco .show p span {
+        width: 1000%;
     }
 }
