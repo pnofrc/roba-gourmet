@@ -525,7 +525,7 @@ a.fa-paper-plane-o:hover {
     text-align: left;
 }
 
-.loghino{
+#loghino{
     display: none;
 }
 
@@ -802,5 +802,9 @@ a.fa-paper-plane-o:hover {
 
     .blocco .show p span {
         width: 1000%;
+    }
+
+    #loghino{
+        display: block;
     }
 }
